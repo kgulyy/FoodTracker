@@ -40,17 +40,18 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="znE-9n-upz"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5Ov-yZ-Y9C">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5Ov-yZ-Y9C">
                                         <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5Ov-yZ-Y9C" secondAttribute="height" multiplier="1:1" id="dLi-9R-KNf"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="lON-f2-SnG" appends="YES" id="FPP-l5-Vlg"/>
+                                            <outletCollection property="gestureRecognizers" destination="sWp-Yw-AdM" appends="YES" id="WI2-Sl-8Gl"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="XBa-JE-Ktw" secondAttribute="trailing" id="dJw-s1-M1m"/>
                                 </constraints>
@@ -71,9 +72,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="lON-f2-SnG">
+                <tapGestureRecognizer id="sWp-Yw-AdM">
                     <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="rYy-IK-8tH"/>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="NvA-Hf-RD6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
